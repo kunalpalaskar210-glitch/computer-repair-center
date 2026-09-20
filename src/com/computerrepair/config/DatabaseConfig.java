@@ -12,7 +12,7 @@ public final class DatabaseConfig {
     // Database connection URL: overridden by COMPUTER_REPAIR_DB_URL if set
     public static final String DB_URL = System.getenv().getOrDefault(
         "COMPUTER_REPAIR_DB_URL",
-        "jdbc:mysql://localhost:3306/computer_repair_center?useSSL=false&serverTimezone=UTC"
+        "jdbc:mysql://localhost:3306/computer_repair_center?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true"
     );
 
     // Database username: overridden by COMPUTER_REPAIR_DB_USER if set
